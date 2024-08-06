@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, input, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-content',
@@ -7,6 +7,10 @@ import { Component } from '@angular/core';
   templateUrl: './content.component.html',
   styleUrl: './content.component.css'
 })
-export class ContentComponent {
-
+export class ContentComponent implements OnInit{
+  name = input.required<string>();
+  
+  ngOnInit(): void {
+    console.log(this.name)
+  }
 }
