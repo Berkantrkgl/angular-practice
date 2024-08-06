@@ -1,0 +1,82 @@
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    max-width: 90%;
+    margin-inline: auto;
+}
+
+.left-side {
+    background-color: rgb(180, 175, 175);
+    border-radius: 1rem;
+    max-width: 20%;
+    min-width: 100px;
+    height: 90%;
+    margin: 2rem;
+    padding-inline: 2rem;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow:  5px 5px 5px rgb(135, 141, 143);
+}
+
+#side-header {
+    width: 50%;
+    text-align: center;
+    margin-block: 1rem;
+}
+
+.single-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 1rem;
+    padding: 1rem;
+    border: #0F2C59 solid 2px;
+    border-radius: 1rem;
+    box-shadow: 0.25rem 0.25rem;
+}
+
+button {
+    background: whitesmoke;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.skill-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 1.5rem;
+    padding-left: 1rem;
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    border: solid blue;
+    margin: 2rem 2rem 2rem 1rem;
+    width: 60%;
+    min-width: 300px;
+    height: 90%;
+}
+
+.card-text {
+    text-align: center;
+}
+
+.content-link {
+    text-decoration: none;
+}
