@@ -1,10 +1,9 @@
 import { Routes } from '@angular/router';
-import { HeaderComponent } from './header/header.component';
-import { AboutComponent } from './about/about.component';
-import { DocsComponent } from './docs/docs.component';
-import { EditComponent } from './edit/edit.component';
 import { HomeComponent } from './home/home.component';
-import { ContentComponent } from './home/content/content.component';
+import { ContentComponent } from './skills/content/content.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { ExperienceComponent } from './experience/experience.component';
+import { SkillsComponent } from './skills/skills.component';
 
 export const routes: Routes = [
     {
@@ -13,26 +12,30 @@ export const routes: Routes = [
         pathMatch: 'full',
     },
     {
-        path: 'aboutus',
-        component: AboutComponent,
-    }, 
-    {
-        path: 'docs',
-        component: DocsComponent,
-    },
-    {
-        path: 'edit',
-        component: EditComponent,
-    }, 
-    {
         path: 'home',
         component: HomeComponent,
+        title: 'Portfolio | Home',
+    },
+    {
+        path: 'skills',
+        component: SkillsComponent,
+        title: 'Portfolio | Skills',
         children: [
             {
-                path: 'content/:name',
+                path: 'content/:contentName',
                 component: ContentComponent,
                 pathMatch: 'full',
             }
         ]
-    }
+    },  
+    {
+        path: 'projects',
+        component: ProjectsComponent,
+        title: 'Portfolio | Projects'
+    },
+    {
+        path: 'experience',
+        component: ExperienceComponent,
+        title: 'Portfolio | Experience'
+    }, 
 ];

@@ -14,5 +14,6 @@ html, body {
 main {
     min-height: 100%; /* Ensure content takes up at least the full viewport height */
     box-sizing: border-box;
+    padding-top: 100px;
     padding-bottom: 50px;
 }
